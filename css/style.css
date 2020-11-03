@@ -1,14 +1,37 @@
 body {
-  background-color: #d5e5f7;
+  background-color: #c4d8ee;
   font-family: "Roboto", sans-serif;
 }
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #018ebd;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 h1 {
-  text-align: center;
+  text-align: left;
   background-color: #7bb9db;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   color: #24315e;
   border: 5px solid #0c7489;
+}
+.lang {
+  position: absolute;
+  right: 2%;
+  top: 5%;
 }
 /* Add a black background color to the top navigation */
 .topnav {
