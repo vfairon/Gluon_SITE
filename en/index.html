@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <title>Gluon Site</title>
 </head>
 <body>
+    <div class="container-fluid">
     <h1>
-        Title Site
+        Name Website
     </h1>
+    <div class="lang">
+        <a href="/en/index.html" style="font-size: 180%; ">En&nbsp;</a>
+        <a href="/fr/index.html" style="font-size: 180%; ">Fr&nbsp;</a>
+        <a href="/nl/index.html" style="font-size: 180%;">Nl</a>
+    </div>
+    <div class="topnav">
+        <a class="active" href="#home">WEB SITE</a>
+        <a href="#home">Discussion</a>
+        <a class="first" href="#news">Simulation</a>
+        <a href="#contact">Lessons</a>
+        <a href="#about">Artistic</a> <!--moeten veranderen-->
+      </div>
+      <table>
+        <tr>
+                <td class="intro"> 
+                    <h2 class="introduction_title">
+                        Introduction
+                    </h2>
+                    <p class="introduction_text">
+                         Welcome to Plug and Play! On this website you can learn about technology and art.
+                         You can even build your own input-output machine right here! Don’t know what an 
+                         input-output machine is? Click here to see some examples :
+                    </p>
+                        <p class="exemple">
+                            <a href="">-  Resources</a>: look at some examples, or learn about programming and electronics!
+                        </p>
+                        <p class="exemple">
+                            <a href="">-  Discussion</a>: talk with experts and other students
+                        </p>
+                        <p class="exemple"><a href="">-  Simulation</a>: Make your own input-output machine, online!</p>
+                        <p class="exemple"><a href="">-  Subscription</a>: Subscribe to the SwatchBox to build and demonstrate your own input-output machine!”</p>
+
+                </td>
+            <td>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/res/arduino.png" alt="First slide" height="500px">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/res/programming.jpg" alt="Second slide" height="500px">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/res/gluon.jpg" alt="Third slide" height="500px">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/res/sensor.png" alt="fourth slide" height="500px">
+                      </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only" style="color :red">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>            </td>
+        </tr>
+    </table>
+    
+</div>
 </body>
 </html>
