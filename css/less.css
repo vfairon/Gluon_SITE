@@ -1,0 +1,23 @@
+.text_exp {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  right: 2em;
+  margin-right: 2em;
+  background-color: rgb(8, 151, 187);
+}
+table {
+  margin-top: 3%;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  max-width: 90%;
+}
+.video {
+  width: 70%;
+}
