@@ -47,7 +47,7 @@ color :rgb(158, 20, 20);
   margin-top: -0.1em;
 }
 /* Style the links inside the navigation bar */
-.topnav a {
+#foo {
   font-size: 150%;
   float: left;
   color: #24315d;
@@ -58,13 +58,19 @@ color :rgb(158, 20, 20);
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+#foo:hover {
   background-color: #8fc1e2;
   color: black;
 }
-
+#sub {
+  position: absolute;
+  left: 84%;
+}
 /* Add a color to the active/current link */
 .topnav a.active {
+  font-family: "Roboto", sans-serif;
+  float : left;
+  padding : 20px;
   margin-left: auto;
   margin-right: auto;
   background-color: #7bb9db;
@@ -120,11 +126,12 @@ table {
 /* Change the color of links on hover */
 .navbar p:hover {
   color:lightgray;
-}rgb(44, 44, 44)
+rgb(44, 44, 44)
+}
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  background-color: #1b4b8a;
+  background-color: #1b4b8a ;
   color: white;
 }
 .extend {
