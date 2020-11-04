@@ -30,6 +30,10 @@ h1 {
   color: #24315e;
   border: 5px solid #0c7489;
 }
+.important {
+font-size: 105%; 
+color :rgb(158, 20, 20);
+}
 .lang {
   position: absolute;
   right: 2%;
