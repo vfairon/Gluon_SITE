@@ -97,7 +97,34 @@ table {
 }
 
 
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #549be2;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+
+.gluon{
 
 
+}
+/* Change the color of links on hover */
+.navbar p:hover {
+  color:lightgray;
+}rgb(44, 44, 44)
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #1b4b8a;
+  color: white;
+}
+.extend {
+  position: relative;
+  top: 5rem;
+}
 
 /*
