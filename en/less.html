@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/less.css">
+        <script type="text/javascript" src="/js/java.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <title>
@@ -32,67 +33,288 @@
                 <a href="#about">Exemples</a> <!--moeten veranderen-->
             </div>
             <h2 style="text-align: center; margin-top: 2%; font-size: 250%;">Tutorials</h2>
-            <table>
+
+
+
+            <table class="in_ou">
                 <tr>
-                    <td class="video">
-                        <iframe src="https://www.youtube.com/embed/IByDClFTOME" 
-                        height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
-
-
-                    </td>
-                    <td> 
-                        <p class="text_exp">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
-                             vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
-                             eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
-                              Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
-                               maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
-                               Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
-                               lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
-                               ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
-                            </p>
-                    </td>
+                    <td class="in_ou_td">INPUT</td>
+                    <td class="in_ou_td">OUTPUT</td>
+                    <td class="in_ou_td">EXEMPLE</td>
                 </tr>
                 <tr>
+                    <td class="in_ou_td" id="light">Light</td>
+                    <td class="in_ou_td" id="movement">Movement</td>
+                    <td class="in_ou_td"><button onclick="myFunction()">1</button></td>
+                </tr>
+
+                <tr>
+                    <td class="in_ou_td"id="light">Light</td>
+                    <td class="in_ou_td"id="light">Light</td>
+                    <td class="in_ou_td"><button onclick="second()">2</button></td>
+                </tr>
+
+                <tr>
+                    <td class="in_ou_td"id="light">Light</td>
+                    <td class="in_ou_td" id="swich">Switch</td>
+                    <td class="in_ou_td"><button onclick="third()">3</button></td>
+                </tr>
+
+                <tr>
+                    <td class="in_ou_td" id="movement">Distance/Movement</td>
+                    <td class="in_ou_td" id="movement">Movement</td>
+                    <td class="in_ou_td"><button onclick="four()">4</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="in_ou_td"id="movement">Distance/Movement</td>
+                    <td class="in_ou_td"id="light">Light</td>
+                    <td class="in_ou_td"><button onclick="five()">5</button></td>
+                </tr>
+
+                <tr>
+                    <td class="in_ou_td" id="movement">Distance/Movement</td>
+                    <td class="in_ou_td" id="swich">Switch</td>
+                    <td class="in_ou_td"><button onclick="six()">6</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="in_ou_td" id="temp">Temperature</td>
+                    <td class="in_ou_td" id="movement">Movement</td>
+                    <td class="in_ou_td"><button onclick="seven()">7</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="in_ou_td" id="temp">Temperature</td>
+                    <td class="in_ou_td" id="light">light</td>
+                    <td class="in_ou_td"><button onclick="eight()">8</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="in_ou_td" id="temp">Temperature</td>
+                    <td class="in_ou_td" id="swich">Switch</td>
+                    <td class="in_ou_td"><button onclick="nine()">9</button>
+                    </td>
+                </tr>
+
+
+            </table>
+
+            <div id="myDIV" style="display: none;">
+                <table>
+                    <tr>
+                        <td class="video">
+                            <iframe src="https://www.youtube.com/embed/IByDClFTOME" 
+                                height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                        </td>
+                        <td>
+                            <p class="text_exp">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                                vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                                eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                                Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                                maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                                Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                                lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="second" style="display: none;">
+                <table>
+                    <tr>
+                        <td style="padding-top: 2em;" class="video">
+                            <iframe src="https://www.youtube.com/embed/Zi7OXmTmgGg" 
+                                height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                        </td>
+                        <td style="margin-top: 20%;">
+                            <p class="text_exp">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                                vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                                eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                                Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                                maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                                Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                                lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="third" style="display: none;">
+                <table>
                     <td style="padding-top: 2em;" class="video">
-                        <iframe src="https://www.youtube.com/embed/Zi7OXmTmgGg" 
-                        height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                        <iframe src="https://www.youtube.com/embed/n0ql-yeY9u0" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
                     </td>
                     <td style="margin-top: 20%;">
                         <p class="text_exp">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
-                             vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
-                             eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
-                              Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
-                               maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
-                               Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
-                               lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
-                               ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
-                            </p>
-                    </td>
-                </tr>
-
-                <td style="padding-top: 2em;" class="video">
-                    <iframe src="https://www.youtube.com/embed/Zi7OXmTmgGg" 
-                    height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
-                </td>
-                <td style="margin-top: 20%;">
-                    <p class="text_exp">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
-                         vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
-                         eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
-                          Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
-                           maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
-                           Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
-                           lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
-                           ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
                         </p>
-                </td>
-            </tr>
-            </table>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="four" style="display: none;">
+                <table>
+                    <td style="padding-top: 2em;" class="video">
+                        <iframe src="https://www.youtube.com/embed/LnzuMJLZRdU" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                    </td>
+                    <td style="margin-top: 20%;">
+                        <p class="text_exp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                        </p>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="five" style="display: none;">
+                <table>
+                    <td style="padding-top: 2em;" class="video">
+                        <iframe src="https://www.youtube.com/embed/6avJHaC3C2U" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                    </td>
+                    <td style="margin-top: 20%;">
+                        <p class="text_exp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                        </p>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="six" style="display: none;">
+                <table>
+                    <td style="padding-top: 2em;" class="video">
+                        <iframe src="https://www.youtube.com/embed/unfzfe8f9NI" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                    </td>
+                    <td style="margin-top: 20%;">
+                        <p class="text_exp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                        </p>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="seven" style="display: none;">
+                <table>
+                    <td style="padding-top: 2em;" class="video">
+                        <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                    </td>
+                    <td style="margin-top: 20%;">
+                        <p class="text_exp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                        </p>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="eight" style="display: none;">
+                <table>
+                    <td style="padding-top: 2em;" class="video">
+                        <iframe src="https://www.youtube.com/embed/pQN-pnXPaVg" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                    </td>
+                    <td style="margin-top: 20%;">
+                        <p class="text_exp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                        </p>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div id="nine" style="display: none;">
+                <table>
+                    <td style="padding-top: 2em;" class="video">
+                        <iframe src="https://www.youtube.com/embed/NQqel85BsU0" 
+                            height="400" width="750" allowfullscreen="" frameborder="0"></iframe>
+                    </td>
+                    <td style="margin-top: 20%;">
+                        <p class="text_exp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum imperdiet dui a ante semper venenatis. Vivamus urna tellus,
+                            vehicula non porttitor at, varius non orci. Proin porta dignissim leo, 
+                            eget mattis enim egestas maximus. Maecenas et erat felis. Suspendisse potenti.
+                            Maecenas laoreet mattis metus, vel consequat sem vulputate ut. Nunc ac nisi pretium,
+                            maximus lectus quis, condimentum justo. Cras vel fringilla libero, vitae suscipit erat. 
+                            Donec sed ante pulvinar, facilisis tellus in, consequat neque. Morbi pharetra eleifend 
+                            lorem. Mauris laoreet condimentum orci, sed suscipit erat scelerisque vel. Vestibulum ante 
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;. 
+                        </p>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+
             <div class="navbar">
                 <p class="gluon">© Website made by Gluon</p>
             </div>
