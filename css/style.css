@@ -40,11 +40,9 @@ color :rgb(158, 20, 20);
   top: 1%;
 }
 /* Add a black background color to the top navigation */
-.topnav {
+#topnav {
   size: 130%;
   background-color: #24315e;
-  overflow: hidden;
-  margin-top: -0.1em;
 }
 /* Style the links inside the navigation bar */
 #foo {
@@ -56,25 +54,22 @@ color :rgb(158, 20, 20);
   padding: 14px 16px;
   text-decoration: none;
 }
+#foo1 {
+  background-color: #7ebde7;
+  border : solid rgb(9, 98, 150) 1px;
+  color: black;
+}
 
 /* Change the color of links on hover */
 #foo:hover {
   background-color: #8fc1e2;
   color: black;
 }
-#sub {
-  position: absolute;
-  left: 84%;
-}
+
 /* Add a color to the active/current link */
-.topnav a.active {
-  font-family: "Roboto", sans-serif;
-  float : left;
-  padding : 20px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #7bb9db;
-  color: #24315e;
+#topdown {
+  background-color: #8fc1e2;
+
 }
 
 table {

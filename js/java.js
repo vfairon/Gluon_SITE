@@ -76,4 +76,27 @@ function nine() {
     }
 } 
 
-
+function pdf1() {
+  var x = document.getElementById("pdf1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    }
+} 
+function pdf2() {
+  var x = document.getElementById("pdf2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    }
+} 
+function pdf3() {
+  var x = document.getElementById("pdf3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    }
+} 
