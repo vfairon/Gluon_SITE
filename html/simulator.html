@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/simulator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="container mt-5">
+        <h2 class="text-centers">Simulation</h2>
+        <h3>Lorem</h3>
+        <div class="explanation d-flex flex-column justify-content-center align-items-center">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, sed explicabo aliquam harum odio placeat cupiditate dolores labore in. Soluta explicabo facere aspernatur exercitationem, laboriosam possimus facilis provident placeat culpa! Eum,
+                sed explicabo aliquam harum odio placeat cupiditate dolores labore in.
+            </p>
+        </div>
+    </section>
+    <div class=" container-fluid mt-5">
+        
+            <div class="row">
+                <div class="col-6 text-center"><h1>Input</h1></div>
+                <div class="col-6 text-center"><h1>Output</h1></div>
+            </div>
+            <!-- ----------Row1 -->
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row"> <button class="btn btn-success">Door</button> </div>
+                    <div class="row"><button class="btn btn-success">Door</button></div>
+                    <div class="row"><input type="text"></div>
+                </div>
+                <div class="col-3 text-center">
+                    <div class="row d-flex justify-content-center"> <img src="../res/img/sensor.png" alt="" srcset=""></div>
+                    <div class="row mt-2 d-flex justify-content-center">  
+                        <!-- <div class="slidecontainer">
+                            <input oninput="slide1()" type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                        </div> -->
+                        <button id="movementBtn" onclick="strip()"class="btn btn-success">Click Me</button>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <b><p>Movement Sensor</p> </b>
+                    </div>
+                </div>
+                <div class="col-3 text-center">
+                    <div class="row d-flex justify-content-center mt-4">
+                        <img id="led1" src="../res/img/led.png " alt=" " srcset=" ">
+                        <img id="led2" src="../res/img/led.png " alt=" " srcset=" ">
+                        <img id="led3" src="../res/img/led.png " alt=" " srcset=" "> 
+                        <img id="led4" src="../res/img/led.png " alt=" " srcset=" ">
+                        <img id="led5" src="../res/img/led.png " alt=" " srcset=" ">
+                        <img id="led6" src="../res/img/led.png " alt=" " srcset=" "> 
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <b> <p>Led's</p></b>
+                    </div>
+                    
+                </div>
+                .col-3
+            </div>
+            <!-- End of Row1 -->
+            <div class="row mt-4">
+                <div class="col-6 text-center">
+                    <div class="row d-flex justify-content-center"> 
+                        <img  class="text-center" onclick="clic(event)" id="i2" src="../res/img/lightbulb.png " alt=" ">
+                    </div>
+                    <div class="row">
+                        <div class="slidecontainer">
+                            <img src="../res/img/moon.png" alt="" srcset="">
+                            <input  oninput="slide2()" type="range" min="1" max="100 " value="0" class="slider" id="myRange2">
+                            <img src="../res/img/sun.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <b><p>Light Sensor</p></b>
+                    </div>
+                </div>
+                <div class="col-6 text-center">
+                    <div class="row d-flex justify-content-center">
+                        <img onclick="clicked(event) " id="o2" src="../res/img/settings.png" alt=" ">
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <b><p>Cerveau Moteur</p></b>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6 text-center">
+                    <div class="row d-flex justify-content-center">
+                        <img id="i3 " src="../res/img/temperature.png" alt=" ">
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="slidecontainer">
+                            <input oninput="power(event)" type="range" min="1" max="100" value="0" class="slider" id="myRange3">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <b><p>Temperature Sensor</p></b>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="row d-flex justify-content-center"><img  id="o3" src="../res/img/turn-off.png " alt=" "></div>
+                    <div class="row d-flex justify-content-center">
+                        <b><p>Relai</p></b>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- ---------- -->
+  
+
+           
+
+            
+    </div>
+    <script src="../js/simulator.js "></script>
+    <script src="../js/utils.js "></script>
+</body>
+
+</html>
