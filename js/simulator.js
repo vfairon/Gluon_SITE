@@ -31,8 +31,17 @@ var i3OptionInput = document.getElementById("i3OptionInput");
 var i1Submit = document.getElementById("i1Submit");
 var i2Submit= document.getElementById("i2Submit");
 var i3Submit = document.getElementById("i3Submit");
+var i1Description = document.getElementById("i1Description");
+var i2Description = document.getElementById("i2Description");
+var i3Description = document.getElementById("i3Description");
+
+var mvDescription = document.getElementById("mvDescription");
+var lightDescription = document.getElementById("lightDescription");
+var tempDescription = document.getElementById("tempDescription");
 
 
 
-mvsensor.addEventListener("mouseenter",strip)
+
+
+
 

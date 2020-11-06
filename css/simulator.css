@@ -74,4 +74,12 @@
             .personalOption{
                 display: none;
             }
+            .personalOption :onclick{
+                color : white;
+            }
+            .base {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 50px;
+            }
            
