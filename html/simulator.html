@@ -21,7 +21,7 @@
             </p>
         </div>
     </section>
-    <div class=" container-fluid mt-5">
+    <div class=" container mt-5">
         
             <div class="row">
                 <div class="col-6 text-center"><h1>Input</h1></div>
@@ -29,25 +29,27 @@
             </div>
             <!-- ----------Row1 -->
             <div class="row mt-5">
-                <div class="col-3">
-                    <div class="row"> <button class="btn btn-success">Door</button> </div>
-                    <div class="row"><button class="btn btn-success">Door</button></div>
-                    <div class="row"><input type="text"></div>
+                <div class="col-2 ">
+                    <div class="row"><button class="btn btn-success personalOption"id="i1Option"></button></div>
+                    <div class="row"> <button class="btn btn-success w-100">Body</button> </div>
+                    <div class="row"><button class="btn btn-success w-100 mt-1">Door</button></div>
+                    <div class="row"><input onkeyup="write"  class="form-control mt-1" id="i1OptionInput"  placeholder="Enter your option"></div>
+                    <div class="row d-flex justify-content-center"><button id="i1Submit" class="btn btn-primary mt-1">Submit</button></div>
                 </div>
-                <div class="col-3 text-center">
-                    <div class="row d-flex justify-content-center"> <img src="../res/img/sensor.png" alt="" srcset=""></div>
+                <div class="col-4 ">
+                    <div class="row d-flex justify-content-center"> <img id="mvsensor" src="../res/img/sensor.png" alt="" srcset=""></div>
                     <div class="row mt-2 d-flex justify-content-center">  
                         <!-- <div class="slidecontainer">
                             <input oninput="slide1()" type="range" min="1" max="100" value="0" class="slider" id="myRange">
                         </div> -->
-                        <button id="movementBtn" onclick="strip()"class="btn btn-success">Click Me</button>
+                        <!-- <button id="movementBtn" onclick="strip()"class="btn btn-success">Click Me</button> -->
                     </div>
                     <div class="row d-flex justify-content-center">
                         <b><p>Movement Sensor</p> </b>
                     </div>
                 </div>
                 <div class="col-3 text-center">
-                    <div class="row d-flex justify-content-center mt-4">
+                    <div class="row d-flex justify-content-center align-items-center ">
                         <img id="led1" src="../res/img/led.png " alt=" " srcset=" ">
                         <img id="led2" src="../res/img/led.png " alt=" " srcset=" ">
                         <img id="led3" src="../res/img/led.png " alt=" " srcset=" "> 
@@ -60,11 +62,22 @@
                     </div>
                     
                 </div>
-                .col-3
+                <div class="col-3">
+                    <div class="row"><input  class="form-control mt-1" id="mvDescription"  placeholder="Description"></div>
+                    <p class="bg-warning mt-2"></p>   
+                 </div>
             </div>
             <!-- End of Row1 -->
+            <!-- Begin of Row2 -->
             <div class="row mt-4">
-                <div class="col-6 text-center">
+                <div class="col-2 ">
+                    <div class="row"><button class="btn optLight personalOption"id="i2OptionValue"></button></div>
+                    <div class="row"> <button class="btn optLight w-100">Body</button> </div>
+                    <div class="row"><button class="btn optLight w-100 mt-1">Door</button></div>
+                    <div class="row"><input  class="form-control mt-1" id="i2OptionInput"  placeholder="Enter your option"></div>
+                    <div class="row d-flex justify-content-center"><button id="i2Submit"class="btn btn-primary mt-1">Submit</button></div>
+                </div>
+                <div class="col-4 text-center">
                     <div class="row d-flex justify-content-center"> 
                         <img  class="text-center" onclick="clic(event)" id="i2" src="../res/img/lightbulb.png " alt=" ">
                     </div>
@@ -79,18 +92,31 @@
                         <b><p>Light Sensor</p></b>
                     </div>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-3 text-center">
                     <div class="row d-flex justify-content-center">
-                        <img onclick="clicked(event) " id="o2" src="../res/img/settings.png" alt=" ">
+                        <img  id="o2" src="../res/img/settings.png" alt=" ">
                     </div>
                     <div class="row d-flex justify-content-center">
                         <b><p>Cerveau Moteur</p></b>
                     </div>
                     
                 </div>
+                <div class="col-3">
+                    <div class="row"><input  class="form-control mt-1" id="lightDescription"  placeholder="Description"></div>
+                    <p class="bg-warning mt-2"></p>                
+                </div>
             </div>
+            <!-- End Of Row2 -->
+            <!-- Begin Of Row3 -->
             <div class="row mt-4">
-                <div class="col-6 text-center">
+                <div class="col-2 ">
+                    <div class="row"><button class="btn personalOption optTemp "id="i3OptionValue"></button></div>
+                    <div class="row"> <button class="btn optTemp w-100">Body</button> </div>
+                    <div class="row"><button class="btn optTemp w-100 mt-1">Door</button></div>
+                    <div class="row"><input  class="form-control mt-1" id="i3OptionInput"  placeholder="Enter your option"></div>
+                    <div class="row d-flex justify-content-center"><button id="i3Submit" class="btn btn-primary mt-1">Submit</button></div>
+                </div>
+                <div class="col-4 text-center">
                     <div class="row d-flex justify-content-center">
                         <img id="i3 " src="../res/img/temperature.png" alt=" ">
                     </div>
@@ -103,14 +129,19 @@
                         <b><p>Temperature Sensor</p></b>
                     </div>
                 </div>
-                <div class="col-6 ">
+                <div class="col-3 ">
                     <div class="row d-flex justify-content-center"><img  id="o3" src="../res/img/turn-off.png " alt=" "></div>
                     <div class="row d-flex justify-content-center">
                         <b><p>Relai</p></b>
                     </div>
                     
                 </div>
+                <div class="col-3">
+                    <div class="row"><input  class="form-control mt-1" id="tempDescription"  placeholder="Description"></div>
+                    <p class="bg-warning mt-2"></p>
+                </div>
             </div>
+            <!-- End Of Row3 -->
             <!-- ---------- -->
   
 

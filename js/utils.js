@@ -129,3 +129,9 @@ function clic(event) {
     }
 
 }
+
+mvsensor.addEventListener("mouseenter",strip)
+
+
+
+

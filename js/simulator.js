@@ -12,6 +12,7 @@ var led4 = document.getElementById("led4")
 var led5 = document.getElementById("led5")
 var led6 = document.getElementById("led6")
 var btnMoov = document.getElementById("movementBtn");
+var mvsensor = document.getElementById("mvsensor")
 var x = 0;
 var clickedElement = [];
 var slider = document.getElementById("myRange");
@@ -20,8 +21,18 @@ var slider3  = document.getElementById("myRange3");
 var count = 0
 var ledOnPath = "../res/img/ledOn.png";
 var ledOffPath = "../res/img/led.png";
-
 var arrLeds  = [led1,led2,led3,led4,led5,led6]
+var i1OptionValue = document.getElementById("i1OptionValue");
+var i2OptionValue = document.getElementById("i2OptionValue");
+var i3OptionValue = document.getElementById("i3OptionValue");
+var i1OptionInput = document.getElementById("i1OptionInput");
+var i2OptionInput = document.getElementById("i2OptionInput");
+var i3OptionInput = document.getElementById("i3OptionInput");
+var i1Submit = document.getElementById("i1Submit");
+var i2Submit= document.getElementById("i2Submit");
+var i3Submit = document.getElementById("i3Submit");
 
 
+
+mvsensor.addEventListener("mouseenter",strip)
 

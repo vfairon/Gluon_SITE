@@ -65,4 +65,13 @@
             #movementBtn :hover{
                 color: #f7f7f7 ;
             }
+            .optTemp{
+                background-color : #ed7d31;
+            }
+            .optLight{
+                background-color: #FFFF00;
+            }
+            .personalOption{
+                display: none;
+            }
            
