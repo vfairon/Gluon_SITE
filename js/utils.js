@@ -310,7 +310,7 @@ function write3()
  function hiddeOptions()
  {
             options.forEach(element=>{
-            element.classList.toggle("invisible")
+            element.classList.toggle("d-none")
           })
  
  }
