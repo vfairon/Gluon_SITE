@@ -1,9 +1,18 @@
+            h1{
+                margin-bottom: 60px;
+            }
+            .square{
+                height: 10px;
+                width: 10px;
+                background-color: black;
+            }
             .far {
                 height: 100vh;
             }
             
             body {
                 background-color: #ffffff;
+                
             }
             
             .progressContainer {
@@ -102,3 +111,8 @@
             a{
                 text-decoration: none;
             }
+            form{
+                background: linear-gradient(#646262, #050507);
+
+            }
+

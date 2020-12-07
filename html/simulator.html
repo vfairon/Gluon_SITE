@@ -12,7 +12,8 @@
 
 <body>
 
-    <section class="container mt-5 mb-5">
+
+    <!-- <section class="container mt-5 mb-5">
       
         <div class="explanation d-flex flex-column ">
             <u><h3>Step 1</h3></u>
@@ -28,25 +29,25 @@
             <p><i>Ex. Smarter city: street lamp is switching on when a car passes by
             </i></p>
         </div>
-    </section>
+    </section> -->
     <div class=" base mt-5">
 
             <!-- ----------Row1 -->
             <div class="row mt-5 justify-content-between">
                <div class="col-1">
-                <div>
-                    <div class="row d-flex justify-content-center"><h1 onclick="hiddeOptions()"> <a class="text-dark" href="#">Options</a></h1></div>
+                <div class="mb-4">
+                    <div class="row d-flex justify-content-center h1"><h1 onclick="hiddeOptions()"> <a class="text-dark" href="#">Options</a></h1></div>
                 </div>
-                   <div class="optionss">
-                       <div class="row"><button class="btn a btn-success personalOption"id="i1OptionValue"></button></div>
-                       <div class="row"> <button class="btn btn-success w-100 mt-1">Body</button> </div>
-                       <div class="row"><button class="btn btn-success w-100 mt-1">Door</button></div>
+                   <div class="optionss d-none">
+                       <div class="row"><button onclick="selectOption(event)"class="btn a btn-success personalOption"id="i1OptionValue" cornichon="salut"></button></div>
+                       <div class="row"> <button onclick="selectOption(event)"class="btn btn-success w-100 mt-1">Body</button> </div>
+                       <div class="row"><button onclick="selectOption(event)"class="btn btn-success w-100 mt-1">Door</button></div>
                        <div class="row"><input class="form-control mt-1" id="i1OptionInput"  placeholder="Your option"></div>
                        <div class="row d-flex justify-content-center"><button id="i1Submit" onclick="write1()" class="btn btn-primary mt-1">Submit</button></div>
                    </div>
                </div>
                 <div class="col-4 inp ">
-                    <div class="row d-flex justify-content-center"><h1>Input</h1></div>
+                    <div class="row d-flex justify-content-center  h1"><h1>Input</h1></div>
                     <div class="row d-flex justify-content-center input"> <img onclick="clicked(event)" class="p-2 sensor" id="i1" src="../res/img/sensor.png" alt="" srcset=""></div>
                     <div class="row mt-2 d-flex justify-content-center">  
                         <!-- <div class="slidecontainer">
@@ -58,8 +59,10 @@
                         <b><span>Movement Sensor</span> <span id="ui1" class="ml-2 usb d-none"><img src="../res/img/usbLeft.png" alt=""></span>  </b>
                     </div>
                 </div>
+                
+               
                 <div class="col-3 text-center">
-                    <div class="row d-flex justify-content-center" ><h1>Output</h1></div>
+                    <div class="row d-flex justify-content-center h1" ><h1>Output</h1></div>
                     <div id="o1"class="row d-flex justify-content-center align-items-center output ">
                         <img id="l1"  onclick="clicked(event)" src="../res/img/led.png " alt=" " srcset=" ">
                         <img id="l2" onclick="clicked(event)" src="../res/img/led.png " alt=" " srcset=" ">
@@ -72,11 +75,12 @@
                     
                 </div>
                 <div class="col-2">
+                    <div style="visibility: hidden;" class="row d-flex justify-content-center  h1" ><h1>Hallo</h1></div>
                     <div class="row ">
                         <input oninput="writeDescription1()"  class="form-control mt-1" id="mvDescription"  placeholder="Description">
                         
                     </div>
-                    <p id="i1Description" class="rounded  mt-2"></p>   
+                    <p class="descriptionP"id="i1Description" class="rounded  mt-2"></p>   
                  </div>
             </div>
             <!-- End of Row1 -->
@@ -84,10 +88,10 @@
             <div class="row mt-4 justify-content-between">
                 <div class="col-1">
 
-                    <div class="optionss">
-                        <div class="row"><button class="btn optLight personalOption"id="i2OptionValue"></button></div>
-                        <div class="row"> <button class="btn optLight w-100 mt-1">Lamp</button> </div>
-                        <div class="row"><button class="btn optLight w-100 mt-1">Sun</button></div>
+                    <div class="optionss d-none">
+                        <div class="row"><button onclick="selectOption(event)"class="btn optLight personalOption"id="i2OptionValue"></button></div>
+                        <div class="row"> <button onclick="selectOption(event)"class="btn optLight w-100 mt-1">Lamp</button> </div>
+                        <div class="row"><button onclick="selectOption(event)"class="btn optLight w-100 mt-1">Sun</button></div>
                         <div class="row"><input  class="form-control mt-1" id="i2OptionInput"  placeholder="Your option"></div>
                         <div class="row d-flex justify-content-center"><button onclick="write2()" id="i2Submit"class="btn btn-primary mt-1">Submit</button></div>
                     </div>
@@ -119,7 +123,7 @@
                 </div>
                 <div class="col-2">
                     <div class="row"><input oninput="writeDescription2()"  class="form-control mt-1" id="lightDescription"  placeholder="Description"></div>
-                    <p id="i2Description" class="bg-dark mt-2"></p>                
+                    <p class="descriptionP"id="i2Description" class="bg-dark mt-2"></p>                
                 </div>
             </div>
             <!-- End Of Row2 -->
@@ -127,10 +131,10 @@
             <div class="row mt-4 justify-content-between">
                 <div class="col-1">
 
-                    <div class="optionss ">
-                        <div class="row"><button class="btn personalOption optTemp "id="i3OptionValue"></button></div>
-                        <div class="row"> <button class="btn optTemp w-100 mt-1">Body</button> </div>
-                        <div class="row"><button class="btn optTemp w-100 mt-1">Sun</button></div>
+                    <div class="optionss d-none">
+                        <div class="row"><button onclick="selectOption(event)"class="btn personalOption optTemp "id="i3OptionValue"></button></div>
+                        <div class="row"> <button onclick="selectOption(event)"class="btn optTemp w-100 mt-1">Body</button> </div>
+                        <div class="row"><button onclick="selectOption(event)"class="btn optTemp w-100 mt-1">Sun</button></div>
                         <div class="row"><input  class="form-control mt-1" id="i3OptionInput"  placeholder="Your option"></div>
                         <div class="row d-flex justify-content-center"><button onclick="write3()" id="i3Submit" class="btn btn-primary mt-1">Submit</button></div>
                     </div>
@@ -157,7 +161,7 @@
                 </div>
                 <div class="col-2">
                     <div class="row"><input oninput="writeDescription3()"  class="form-control mt-1" id="tempDescription"  placeholder="Description"></div>
-                    <p id="i3Description"class="bg-dark mt-3">
+                    <p class="descriptionP" id="i3Description"class="bg-dark mt-3">
 
                     </p>
                 </div>
@@ -166,8 +170,37 @@
             <!-- ---------- -->
        
     </div>
+    <section class="m-5">
+        <h1 class="text-center">Save and Send</h1>
+        <div class="container-fluid d-flex  justify-content-center ">
+            <form method="POST" class="col-4 p-5 " action="../php/mail.php">
+                <div class="form-group row">
+                    <div class="col-6">
+                        <input name="firstname" required type="text" class="form-control" id="name"  placeholder="Enter your firstname">
+                        <label class="text-light" for="name"> <b>First Name</b></label>
+                    </div>
+                    <div class="col-6">
+                        <input name="name" required type="text" class="form-control" id="exampleInputEmail1"  placeholder="Enter your name">
+                        <label class="text-light" for="exampleInputEmail1"><b>Name</b></label>
+                    </div>
+                  
+                    
+                </div>
+                  <div class="form-group">
+                      <input name="mail" required type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your email Adress">
+                      <label class="text-light" for="exampleInputPassword1"><b>Email</b></label>
+                  </div>
+                  <input name="option" id="optionForm"type="hidden" >
+                  <input type="hidden" name="description" id="descForm">
+                  <input type="hidden" name="input" id="inForm">
+                  <input type="hidden" name="output" id="outForm">
+                  <button onclick="bnk()" type="submit" class="btn btn-dark"><b>Submit</b></button>
+            </form>
+        </div>
+    </section>
     <script src="../js/simulator.js "></script>
     <script src="../js/utils.js "></script>
 </body>
+
 
 </html>

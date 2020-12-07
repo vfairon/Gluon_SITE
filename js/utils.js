@@ -1,11 +1,16 @@
 let i = 0;
+var ioSelection = {
+    input:'',
+    output:'',
+}
 function clicked(event) {
-    if ((i > 1 || i == 0) && $(event.target).parents(".output").length) return;
+    if (i !=1 && $(event.target).parents(".output").length) return;
     if (i > 0 && $(event.target).parents(".input").length)
     {
         if (i == 1) return;
     }
     i++;
+    //-----------------------------------input
     if (i > 2) {      
         document.querySelectorAll(".d-inline").forEach(element => {
             element.classList.remove("d-inline")
@@ -27,9 +32,18 @@ function clicked(event) {
         led1.setAttribute("connected","true")
         led2.setAttribute("connected","true")
         led3.setAttribute("connected","true")
+        ioSelection["output"] = "Led's"
 
     }
     else{
+        switch(id)
+        {
+            case "i1" : ioSelection["input"] = "Movement Sensor";break;
+            case "i2" : ioSelection["input"] = "Light Sensor";break;
+            case "i3" : ioSelection["input"] = "Temperature Sensor";break;
+            case "o2" : ioSelection["output"] = "Cerveau Moteur";break;
+            case "o3" : ioSelection["output"] = "Relai";break;
+        }
     
         event.target.setAttribute("connected","true")
     }
@@ -237,6 +251,8 @@ function write1()
         i1OptionValue.style.visibility="visible"
         i1OptionValue.style.display="inline"
         i1OptionValue.style.width="100%"
+
+        
     }
     
     
@@ -286,6 +302,15 @@ function write3()
     {
         i1Description.classList.remove("p-2")
     }
+    else{
+        i2Description.innerText =""
+        i2Description.classList.remove("p-2")
+        lightDescription.value="";
+        i3Description.classList.remove("p-2");
+       i3Description.innerText=""
+       tempDescription.value=""
+    }
+
  }
  function writeDescription2()
  {
@@ -294,6 +319,15 @@ function write3()
     if(i2Description.innerHTML === "")
     {
         i2Description.classList.remove("p-2")
+    }
+    else{
+        i1Description.classList.remove("p-2")
+        i1Description.innerText="";
+        mvDescription.value="";
+        i3Description.classList.remove("p-2")
+        i3Description.innerText="";
+        tempDescription.value=""
+
     }
   }
    
@@ -304,7 +338,17 @@ function write3()
     if(i3Description.innerHTML === "")
         {
             i3Description.classList.remove("p-2")
+        
         }
+        else{
+            i1Description.classList.remove("p-2")
+            i1Description.innerText="";
+            mvDescription.value=""
+            i2Description.classList.remove("p-2")
+            i2Description.innerText="";
+            lightDescription.value="";
+        }
+       
    
  }
  function hiddeOptions()
@@ -315,3 +359,21 @@ function write3()
  
  }
 mvsensor.addEventListener("mouseenter",strip)
+
+
+function bnk()
+{
+  var inp = document.getElementById("inForm");
+  var oup = document.getElementById("outForm");
+  inp.value = ioSelection["input"];
+  oup.value = ioSelection["output"];
+  
+  for (i =0;i<3;i++)
+  {
+    if(descriptions[i].innerText.length>0)
+     {
+       var descForm = document.getElementById("descForm");
+       descForm.value=descriptions[i].innerHTML;
+     }
+  }
+}

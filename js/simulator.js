@@ -11,7 +11,7 @@ var led3 = document.getElementById("l3")
 var btnMoov = document.getElementById("movementBtn");
 var mvsensor = document.getElementById("i1")
 var x = 0;
-var inOutPuts = [i2,i3,o2,o3];
+var inOutPuts = [i1,i2,i3,o1,o2,o3];
 var slider = document.getElementById("myRange");
 var slider2 = document.getElementById("myRange2");
 var slider3  = document.getElementById("myRange3");
@@ -31,15 +31,26 @@ var i3Submit = document.getElementById("i3Submit");
 var i1Description = document.getElementById("i1Description");
 var i2Description = document.getElementById("i2Description");
 var i3Description = document.getElementById("i3Description");
-
+var selectedOption 
 var mvDescription = document.getElementById("mvDescription");
 var lightDescription = document.getElementById("lightDescription");
 var tempDescription = document.getElementById("tempDescription");
 var isHidden = true;
-
+var descriptions = document.getElementsByClassName("descriptionP");
 var options = Array.from($(".optionss"))
+var inoutputs;
 
   inOutPuts.forEach(element=>{
      console.log(element)
  element.setAttribute("connected","false")
  })
+
+ function selectOption(event)
+ {
+   selectedOption = document.getElementById("optionForm");
+   selectedOption.value = event.target.innerHTML;
+  
+  }
+
+  
+
